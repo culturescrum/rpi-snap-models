@@ -1,4 +1,5 @@
 import { ISnapModel, Pi3Model } from './models';
+import { AssertionError } from 'assert';
 const sinon = require('sinon');
 const chai = require('chai')
   , expect = chai.expect;
@@ -7,10 +8,11 @@ chai.use(require('chai-match'));
 require('mocha-sinon');
 
 describe('Pi3Model implements ISnapModel with parameters', () => {
-    const piModel3 = new Pi3Model('test-authority-id', 'test-brand-id', '18', 'test-model');
+    let piModel3 = new Pi3Model('test-authority-id', 'test-brand-id', '18', 'test-model');
+    
 
     beforeEach(function() {
-        // const timeStamp = new Date().toISOString();
+        piModel3.timestamp = new Date().toISOString();
     });
     it('should have default type', function() {
         chai.assert(piModel3.type == 'model', 'type is model');
@@ -42,6 +44,11 @@ describe('Pi3Model implements ISnapModel with parameters', () => {
         series = '16';
         const piModel3b = new Pi3Model('test-authority-id', 'test-brand-id', series, 'test-model');
         expect(piModel3b.series).to.equal(series);
+    });
+    it('should output valid JSON', function() {
+        const jsonObject = piModel3.toJSON();
+        console.log(jsonObject);
+        chai.assert(jsonObject.hasOwnProperty('type'));
     });
 
 });
