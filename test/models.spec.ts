@@ -1,6 +1,4 @@
-import { ISnapModel, Pi3Model } from './models';
-import { AssertionError } from 'assert';
-const sinon = require('sinon');
+import { ISnapModel, Pi3Model } from '../dist/index';
 const chai = require('chai')
   , expect = chai.expect;
 chai.use(require('sinon-chai'));
@@ -9,7 +7,6 @@ require('mocha-sinon');
 
 describe('Pi3Model implements ISnapModel with parameters', () => {
     let piModel3 = new Pi3Model('test-authority-id', 'test-brand-id', '18', 'test-model');
-    
 
     beforeEach(function() {
         piModel3.timestamp = new Date().toISOString();

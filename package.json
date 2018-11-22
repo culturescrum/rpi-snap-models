@@ -8,7 +8,7 @@
     "clean": "rm -rf node_modules dist build",
     "prepare": "npm run tsc:build",
     "tsc:build": "tsc",
-    "test": "npm run lint && mocha -u tdd --reporter spec -r ts-node/register src/**/*.spec.ts",
+    "test": "npm run lint && mocha -u tdd --reporter spec --recursive ./test/**/*.spec.ts",
     "lint": "tslint -p tsconfig.json"
   },
   "publishConfig": {

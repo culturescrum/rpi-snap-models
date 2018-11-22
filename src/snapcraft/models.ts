@@ -33,11 +33,13 @@ export class Pi3Model implements ISnapModel {
             this.brandId = arguments[0].brandId;
             this.series = arguments[0].series;
             this.model = arguments[0].model;
+            this.timestamp = arguments[0].timestamp;
         } else {
             this.authorityId = arguments[0];
             this.brandId = arguments[1];
             this.series = arguments[2];
             this.model = arguments[3];
+            this.timestamp = new Date().toISOString();
         }
 
         if (this.series === '16') {
