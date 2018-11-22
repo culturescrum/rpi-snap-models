@@ -10,13 +10,13 @@ export const Pi3Defaults: ISnapModel = {
     model: 'test-model',
     architecture: 'ignored',
     gadget: 'ignored',
-    kernel: 'ignored',
-    timestamp: new Date().toISOString(),
+    kernel: 'ignored'
 }
 
 function createPi3Model(obj: object): Pi3Model {
     let snapModel: ISnapModel;
     snapModel = obj as ISnapModel;
+    snapModel.timestamp = new Date().toISOString();
     return new Pi3Model(snapModel);
 }
 
