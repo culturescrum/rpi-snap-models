@@ -15,4 +15,4 @@ deploy:
     tags: true
     repo: culturescrum/rpi-snap-models
     branch: master
-    node: "lts/carbon"
+    node: "lts/dubnium"
