@@ -1,0 +1,8 @@
+deploy:
+  provider: npm
+  email: mking@arikel.net
+  api_key:
+    secure: yhvgZHe/Ax+gqmbf1huh5cdEYLCTy940rLrecusx/tkvE9Z3GGdLvC9N0Bo8L0fVm7jgRvn7tjJXqkVO+Pxhew/gcLPs3BCpN1oqeAXJJ52YV2pNf9iFUKQQf6F2UDBqcLUSgDhUOTRRtvDxAA2CwJtm7b/J9pCu6R+B3fUhaWlqVd25VNi9vRrJb4eiu/9arf/bsBDj+GVl1NtUit/ArFjxgA+3giZQa0vgzAIgLA1qETdskE+gZW4XA7GIJjxh0g6RYkuQmZiWnVlKVuOL10/GU++eeBujgIe0P9xkX3+6GiZ0tzETaNIivm4ta6IdmetGPPFVsaSZIKkMUTyTbvYouzpuK8aiJw/roUie7gTNJJchHzkx7/wybk4NNAOSb6D4wgsvkgjFUlfFSkDmYAA17P/Cwjc9cOFnU260ZEhLvg0J9kamdmJaZoD0979fXCISAPa0MnzvIPhyGcPCUbJWIjtxmbtHsAc/s0HAqrft5x8PUqbq2Xl/rTGXjcU+NzmCbjw3Ql6MS44y/eL10ZgZuFh7KN6AhYXQRGVA1AIoonUyMpkwg+gjk4RU8daU2eEm1Z3h416zM9GLG+Si82TdFjbg869MDdF3D7AnX2kdecM6vN1CJ9PVjE5anxSF0X/6jvh/LRbHIZOMdXVuFYko7x2J2w6hO+cm3cetGhY=
+  on:
+    tags: true
+    repo: culturescrum/rpi-snap-models
