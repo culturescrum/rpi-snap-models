@@ -10,16 +10,16 @@ export interface ISnapModel {
     kernel: string;
     timestamp?: string;
 }
-export class Pi3Model implements ISnapModel { 
-    type: string;
-    authorityId: string;
-    brandId: string;
-    series: string;
-    model: string;
-    architecture: string;
-    gadget: string;
-    kernel: string;
-    timestamp?: string;
+export class Pi3Model implements ISnapModel {
+    public type: string;
+    public authorityId: string;
+    public brandId: string;
+    public series: string;
+    public model: string;
+    public architecture: string;
+    public gadget: string;
+    public kernel: string;
+    public timestamp?: string;
 
     constructor(obj: ISnapModel);
     constructor(authorityId: string, brandId: string, series: string, model: string);
@@ -28,7 +28,7 @@ export class Pi3Model implements ISnapModel {
         this.architecture = 'armhf';
         this.gadget = 'pi3';
         this.kernel = 'pi2-kernel';
-        if (arguments.length == 1) {
+        if (arguments.length === 1) {
             this.authorityId = arguments[0].authorityId;
             this.brandId = arguments[0].brandId;
             this.series = arguments[0].series;
@@ -59,7 +59,7 @@ export class Pi3Model implements ISnapModel {
             'brand-id': this.brandId,
             'series': this.series,
             'model': this.model,
-            'timestamp': this.timestamp
+            'timestamp': this.timestamp,
         }
     }
-} 
+}
