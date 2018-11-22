@@ -10,7 +10,7 @@ export const Pi3Defaults: ISnapModel = {
     model: 'test-model',
     architecture: 'ignored',
     gadget: 'ignored',
-    kernel: 'ignored'
+    kernel: 'ignored',
 }
 
 function createPi3Model(obj: object): Pi3Model {
