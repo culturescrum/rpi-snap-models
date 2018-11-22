@@ -5,12 +5,19 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf node_modules dist build",
+    "prepare": "npm run tsc:build",
+    "tsc:build": "tsc",
+    "test": "node ./test.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
     "@types/node": "^8.10.38",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
     "typescript": "^3.1.6"
   }
 }

@@ -15,7 +15,7 @@
         "src/**/*"
     ],
     "exclude": [
-        "**/*.spec.ts"
+        "src/**/*.spec.ts"
     ],
     "types": [
         "node"
