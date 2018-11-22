@@ -3,6 +3,8 @@ language: node_js
 node_js:
   - "lts/carbon"
   - "lts/dubnium"
+before_install:
+  - export PATH=$PATH:./node_modules/.bin/
 deploy:
   provider: npm
   email: mking@arikel.net
