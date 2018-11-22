@@ -11,8 +11,11 @@
     "test": "npm run lint && mocha -u tdd --reporter spec -r ts-node/register src/**/*.spec.ts",
     "lint": "tslint -p tsconfig.json"
   },
-  "author": "",
-  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "michael k <mking@arikel.net>",
+  "license": "GPL-3.0",
   "devDependencies": {
     "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.5",
