@@ -1,3 +1,8 @@
+dist: xenial
+language: node_js
+node_js:
+  - "lts/carbon"
+  - "lts/dubnium"
 deploy:
   provider: npm
   email: mking@arikel.net
