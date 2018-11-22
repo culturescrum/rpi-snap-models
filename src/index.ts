@@ -1,1 +1,1 @@
-export { Pi3Model, ISnapModel } from './snapcraft/models'
+export { Pi3Model, ISnapModel } from './snapcraft/models';
