@@ -13,3 +13,4 @@ deploy:
   on:
     tags: true
     repo: culturescrum/rpi-snap-models
+    branch: master
